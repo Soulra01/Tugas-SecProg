@@ -89,7 +89,7 @@
                 <a href="#"><img src="../assets/category/img/bxl-instagram.svg"/></i></a>
             </div>
             <div class="text">
-                <p>Copyright @ 2021 Faiz Faqihudin . All Rights Reserved</p>
+                <p>Copyright @ 2021. All Rights Reserved</p>
             </div>
         </div>
     </footer>
