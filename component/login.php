@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wear House - Login</title>
-    <link rel="stylesheet" href="./assets/login/login.css">
-    <link rel="stylesheet" href="./assets/navbar.css">
-    <link rel="stylesheet" href="./assets/footer.css">
-    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="../assets/global.css">
+    <link rel="stylesheet" href="../assets/login/login.css">
+    <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="../assets/footer.css">
     <script src="../script/jquery.js"></script>
     <script src="../script/login.js"></script>
 </head>
