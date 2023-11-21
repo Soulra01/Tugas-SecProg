@@ -12,6 +12,7 @@
     <script src="../script/login.js"></script>
 </head>
 <body>
+<form action="controllers/AuthControllerlogin.php" method="POST">
     <!-- Navbar -->
     <nav class="navbar">
         <div class="kiri">
