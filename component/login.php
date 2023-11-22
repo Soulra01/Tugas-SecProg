@@ -96,7 +96,39 @@
     </footer>
 </body>
 <script>
-    // $('.homecontainer').hide();
+
+    $('#popupadd').hide();
+
+    $('#popupedit').hide();
+
+    $('#popupdelete').hide();
+
+ 
+
+    function addpopup(){
+
+        $('#popupadd').show();
+
+    }
+
+    function xbtnadd(){
+
+        $('#popupadd').hide();
+
+    }
+
+    function xbtnedit(){
+
+        $('#popupedit').hide();
+
+    }
+
+    function xbtndelete(){
+
+        $('#popupdelete').hide();
+
+    }
+
 </script>
 <script src="../script/status.js"></script>
 </html>
