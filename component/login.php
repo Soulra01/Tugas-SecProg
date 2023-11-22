@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,6 @@
     <script src="../script/login.js"></script>
 </head>
 <body>
-<form action="controllers/AuthControllerlogin.php" method="POST">
     <!-- Navbar -->
     <nav class="navbar">
         <div class="kiri">
@@ -59,24 +60,28 @@
                 <div class="loginTitle">
                     <P>Login</P>
                 </div>
-                <div class="inputanLogin">
-                    <div class="emailset">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email">
+                <form action="../controllers/authcontrolerlogin.php" method="POST">
+                    <div class="inputanLogin">
+                        
+                            <div class="emailset">
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="passwordset">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="rememberme">
+                                <input type="checkbox" id="kotak">
+                                <label for="kotak" id="rm">Remember Me</label>
+                            </div>
+                            <div class="loginbawah">
+                                <button class="loginbtn">Login</button>
+                                <a href="#" class="forgot">Forgot Your Password?</a>
+                            </div>
+                        
                     </div>
-                    <div class="passwordset">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="rememberme">
-                        <input type="checkbox" id="kotak">
-                        <label for="kotak" id="rm">Remember Me</label>
-                    </div>
-                    <div class="loginbawah">
-                        <button class="loginbtn" onclick="doLogin()">Login</button>
-                        <a href="#" class="forgot">Forgot Your Password?</a>
-                    </div>
-                </div>
+                </form>
            </div> 
         </div>
     </div>
@@ -95,8 +100,5 @@
         </div>
     </footer>
 </body>
-<script>
-    // $('.homecontainer').hide();
-</script>
-<script src="../script/status.js"></script>
+
 </html>
