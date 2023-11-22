@@ -8,8 +8,13 @@
     <!-- <link rel="stylesheet" href="../assets/global.css"> -->
 </head>
 <body>
+<<<<<<< HEAD
 
     <!-- NAVBAR SUDAH RESPONSIVE -->
+=======
+<form action="controllers/AuthControllerlogin.php" method="POST">
+    <!-- Navbar -->
+>>>>>>> 689b0498dd7d64b627fb87c96506803e4294d7a8
     <nav class="navbar">
         <div class="kiri">
             <ul>
@@ -47,6 +52,58 @@
         </div>
     </nav>
 
+<<<<<<< HEAD
 <script src="../script/navbar.js"></script>
 </body>
+=======
+    <!-- content -->
+    <!-- login -->
+
+    <div class="loginContainer">
+        <div class="loginBox">
+           <div class="loginBox2">
+                <div class="loginTitle">
+                    <P>Login</P>
+                </div>
+                <div class="inputanLogin">
+                    <div class="emailset">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="passwordset">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="rememberme">
+                        <input type="checkbox" id="kotak">
+                        <label for="kotak" id="rm">Remember Me</label>
+                    </div>
+                    <div class="loginbawah">
+                        <button class="loginbtn" onclick="doLogin()">Login</button>
+                        <a href="#" class="forgot">Forgot Your Password?</a>
+                    </div>
+                </div>
+           </div> 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="icons">
+                <a href="#"><img src="../assets/category/img/bxl-twitter.svg"></a>
+                <a href="#"><img src="..//assets/category/img/bxl-facebook.svg"></a>
+                <a href="#"><img src="../assets/category/img/bxl-instagram.svg"/></i></a>
+            </div>
+            <div class="text">
+                <p>Copyright @ 2021. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    $('.homecontainer').hide();
+</script>
+<script src="../script/status.js"></script>
+>>>>>>> 689b0498dd7d64b627fb87c96506803e4294d7a8
 </html>
