@@ -1,5 +1,5 @@
 # Tugas Secprog
-
+# Selamat malam koh kelompok kami masih dalam tahap development dan terkadang masih ada yang environment systemnya kadang error, so we still configure it ;)
 ## Anggota
 |no|Nama|NIM|
 |--|----|---|
@@ -7,8 +7,6 @@
 |2|Muhammad Huda Setiawan|2502032491|
 |3|Muhammad Sajid|2502047202|
 
-
-fsefsefsefsef
 
 ```
 git clone https://github.com/Soulra01/Tugas-SecProg.git

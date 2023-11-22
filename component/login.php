@@ -1,17 +1,19 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wear House - Login</title>
+    <link rel="stylesheet" href="../assets/global.css">
+    <link rel="stylesheet" href="../assets/login/login.css">
     <link rel="stylesheet" href="../assets/navbar.css">
-    <link rel="stylesheet" href="../assets/login/login.css">   
     <link rel="stylesheet" href="../assets/footer.css">
-    
-    <!-- <link rel="stylesheet" href="../assets/global.css"> -->
+    <script src="../script/jquery.js"></script>
+    <script src="../script/login.js"></script>
 </head>
 <body>
-<form action="controllers/AuthControllerlogin.php" method="POST">
     <!-- Navbar -->
     <nav class="navbar">
         <div class="kiri">
@@ -30,7 +32,7 @@
                 <li><label for="tri" id="segitiga">▼</label></li>
                 <button id="LogOut" onclick="doLogOut()">LogOut</button>
                 <div id="loginRegister">
-                    <li><a href="./login.php">Login</a></li>
+                    <li><a href="./login.html">Login</a></li>
                     <li><a href="./register.html">Register</a></li>
                 </div>
             </ul>  
@@ -43,7 +45,6 @@
             <div class="ddatas">
                 <a href="./category.html">category</a>
                 <a href="./aboutUs.html">About Us</a>
-                <hr>
             </div>
             <a href="./login.php">Login</a>
             <a href="./register.php">Register</a>
@@ -59,24 +60,28 @@
                 <div class="loginTitle">
                     <P>Login</P>
                 </div>
-                <div class="inputanLogin">
-                    <div class="emailset">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email">
+                <form action="../controllers/authcontrolerlogin.php" method="POST">
+                    <div class="inputanLogin">
+                        
+                            <div class="emailset">
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="passwordset">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="rememberme">
+                                <input type="checkbox" id="kotak">
+                                <label for="kotak" id="rm">Remember Me</label>
+                            </div>
+                            <div class="loginbawah">
+                                <button class="loginbtn">Login</button>
+                                <a href="#" class="forgot">Forgot Your Password?</a>
+                            </div>
+                        
                     </div>
-                    <div class="passwordset">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="rememberme">
-                        <input type="checkbox" id="kotak">
-                        <label for="kotak" id="rm">Remember Me</label>
-                    </div>
-                    <div class="loginbawah">
-                        <button class="loginbtn" onclick="doLogin()">Login</button>
-                        <a href="#" class="forgot">Forgot Your Password?</a>
-                    </div>
-                </div>
+                </form>
            </div> 
         </div>
     </div>
@@ -95,8 +100,5 @@
         </div>
     </footer>
 </body>
-<script>
-    // $('.homecontainer').hide();
-</script>
-<script src="../script/status.js"></script>
+
 </html>
