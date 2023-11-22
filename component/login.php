@@ -96,7 +96,7 @@
     </footer>
 </body>
 <script>
-    $('.homecontainer').hide();
+    // $('.homecontainer').hide();
 </script>
 <script src="../script/status.js"></script>
 </html>
