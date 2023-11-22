@@ -8,8 +8,6 @@
 |3|Muhammad Sajid|2502047202|
 
 
-fsefsefsefsef
-
 ```
 git clone https://github.com/Soulra01/Tugas-SecProg.git
 
