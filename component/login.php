@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="../assets/login/login.css">   
+    <link rel="stylesheet" href="../assets/footer.css">
+    
     <!-- <link rel="stylesheet" href="../assets/global.css"> -->
 </head>
 <body>
