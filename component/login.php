@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wear House - Login</title>
+    <link rel="stylesheet" href="../assets/global.css">
+    <link rel="stylesheet" href="../assets/login/login.css">
     <link rel="stylesheet" href="../assets/navbar.css">
-    <link rel="stylesheet" href="../assets/login/login.css">   
     <link rel="stylesheet" href="../assets/footer.css">
-    
-    <!-- <link rel="stylesheet" href="../assets/global.css"> -->
+    <script src="../script/jquery.js"></script>
+    <script src="../script/login.js"></script>
 </head>
 <body>
 <form action="controllers/AuthControllerlogin.php" method="POST">
@@ -30,7 +31,7 @@
                 <li><label for="tri" id="segitiga">▼</label></li>
                 <button id="LogOut" onclick="doLogOut()">LogOut</button>
                 <div id="loginRegister">
-                    <li><a href="./login.php">Login</a></li>
+                    <li><a href="./login.html">Login</a></li>
                     <li><a href="./register.html">Register</a></li>
                 </div>
             </ul>  
@@ -43,7 +44,6 @@
             <div class="ddatas">
                 <a href="./category.html">category</a>
                 <a href="./aboutUs.html">About Us</a>
-                <hr>
             </div>
             <a href="./login.html">Login</a>
             <a href="./register.html">Register</a>
