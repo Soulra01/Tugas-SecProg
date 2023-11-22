@@ -16,7 +16,7 @@
     <nav class="navbar">
     <div class="kiri">
             <ul>
-                <a href="./home.html" id="logo">WearHouse</a>
+                <a href="./cek.php" id="logo">WearHouse</a>
                 <div class="catabout">
                     <li><a href="./category.php">Category</a></li>
                     <li><a href="./aboutus.php">About Us</a></li>
@@ -41,11 +41,11 @@
         <!-- Navbar Responsiv -->
         <div class="navrespon">
             <div class="ddatas">
-                <a href="./category.html">category</a>
-                <a href="./aboutUs.html">About Us</a>
+                <a href="./category.php">category</a>
+                <a href="./aboutus.php">About Us</a>
             </div>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
+            <a href="./login.php">Login</a>
+            <a href="./register.php">Register</a>
         </div>
     </nav>
 

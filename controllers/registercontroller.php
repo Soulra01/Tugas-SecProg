@@ -4,13 +4,13 @@ header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userName = $_POST['Name'];
-    $userEmail = $_POST['Email'];
-    $userPassword = $_POST['Password'];
+    $userName = $_POST['name'];
+    $userEmail = $_POST['email'];
+    $userPassword = $_POST['password'];
 
     if (strlen($userName) < 4 || !filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400); 
-        echo "inout data tidak valid.";
+        echo "input data tidak valid.";
     } else {
         require('../controller/connection.php');
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($resultEmail->num_rows > 0) {
                 http_response_code(400); 
-                echo "Email sudah terdaftar.";
+                echo "Email sudah ada";
             } else {
                 $checkUsernameQuery = "SELECT * FROM users WHERE Name = ?";
                 $checkUsernameStmt = $con->prepare($checkUsernameQuery);
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 if ($resultUsername->num_rows > 0) {
                     http_response_code(400); 
-                    echo "Username sudah terdaftar.";
+                    echo "Username sudah dipakai.";
                 } else {
                     $insertUserQuery = "INSERT INTO users (UserId, Name, Email) VALUES (null, ?, ?)";
                     $insertUserStmt = $con->prepare($insertUserQuery);
