@@ -8,13 +8,8 @@
     <!-- <link rel="stylesheet" href="../assets/global.css"> -->
 </head>
 <body>
-<<<<<<< HEAD
-
-    <!-- NAVBAR SUDAH RESPONSIVE -->
-=======
 <form action="controllers/AuthControllerlogin.php" method="POST">
     <!-- Navbar -->
->>>>>>> 689b0498dd7d64b627fb87c96506803e4294d7a8
     <nav class="navbar">
         <div class="kiri">
             <ul>
@@ -52,10 +47,6 @@
         </div>
     </nav>
 
-<<<<<<< HEAD
-<script src="../script/navbar.js"></script>
-</body>
-=======
     <!-- content -->
     <!-- login -->
 
@@ -105,5 +96,4 @@
     $('.homecontainer').hide();
 </script>
 <script src="../script/status.js"></script>
->>>>>>> 689b0498dd7d64b627fb87c96506803e4294d7a8
 </html>
