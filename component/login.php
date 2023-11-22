@@ -19,8 +19,8 @@
             <ul>
                 <a href="./home.html" id="logo">WearHouse</a>
                 <div class="catabout">
-                    <li><a href="./category.html">Category</a></li>
-                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./category.php">Category</a></li>
+                    <li><a href="./aboutus.php">About Us</a></li>
                 </div>
             </ul>
         </div>
@@ -31,8 +31,8 @@
                 <li><label for="tri" id="segitiga">▼</label></li>
                 <button id="LogOut" onclick="doLogOut()">LogOut</button>
                 <div id="loginRegister">
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./login.php">Login</a></li>
+                    <li><a href="./register.php">Register</a></li>
                 </div>
             </ul>  
         </div>
@@ -45,8 +45,8 @@
                 <a href="./category.html">category</a>
                 <a href="./aboutUs.html">About Us</a>
             </div>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
+            <a href="./login.php">Login</a>
+            <a href="./register.php">Register</a>
         </div>
     </nav>
 
@@ -90,7 +90,7 @@
                 <a href="#"><img src="../assets/category/img/bxl-instagram.svg"/></i></a>
             </div>
             <div class="text">
-                <p>Copyright @ 2021. All Rights Reserved</p>
+                <p>Copyright @ 2023 Secure Programming KEL . All Rights Reserved</p>
             </div>
         </div>
     </footer>

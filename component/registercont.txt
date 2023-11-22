@@ -1,0 +1,50 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Mengambil dan sanitasi data form
+    $name = sanitizeInput($_POST["name"]);
+    $email = sanitizeInput($_POST["email"]);
+    $password = sanitizeInput($_POST["password"]);
+    $confirmPassword = sanitizeInput($_POST["confirm"]);
+    $agreeTerms = isset($_POST["kotak"]) ? true : false; // Check if the checkbox is checked
+
+    // Validasi
+    if (empty($name) || empty($email) || empty($password) || empty($confirmPassword)) {
+        echo "Data wajib diisi !!!";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Email tidak ditemukan.";
+    } elseif (!validatePassword($password)) {
+        echo "Password harus terdiri dari angka, symbol, huruf besar, huruf kecil, dan minimal 8 karakter!";
+    } elseif ($password != $confirmPassword) {
+        echo "Password and Confirm Password tidak sama !!!";
+    } elseif (!$agreeTerms) {
+        echo "Anda harus menyetujui Syarat dan ketentuan yang berlaku!";
+    } else {
+        // Password hash (security)
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    }
+} else {
+    // Jika terjadi error pada pembuatan akun
+    echo "Invalid form submission.";
+}
+
+function sanitizeInput($input) {
+    // Use this function to sanitize user input
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+}
+
+// Function untuk validasi email
+function validateEmail($email) {
+    $emailRegex = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
+    return preg_match($emailRegex, $email);
+}
+
+// Function untuk validasi password
+function validatePassword($password) {
+    // Customize requirements as needed
+    $passwordRegex = '/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/';
+    return preg_match($passwordRegex, $password);
+}
+?>
