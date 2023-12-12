@@ -16,7 +16,7 @@
     <nav class="navbar">
     <div class="kiri">
             <ul>
-                <a href="./home.html" id="logo">WearHouse</a>
+                <a href="./cek.php" id="logo">WearHouse</a>
                 <div class="catabout">
                     <li><a href="./category.php">Category</a></li>
                     <li><a href="./aboutus.php">About Us</a></li>
@@ -41,11 +41,11 @@
         <!-- Navbar Responsiv -->
         <div class="navrespon">
             <div class="ddatas">
-                <a href="./category.html">category</a>
-                <a href="./aboutUs.html">About Us</a>
+                <a href="./category.php">category</a>
+                <a href="./aboutus.php">About Us</a>
             </div>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
+            <a href="./login.php">Login</a>
+            <a href="./register.php">Register</a>
         </div>
     </nav>
 
@@ -56,31 +56,34 @@
                 <div class="regisTitle">
                     <P>Register</P>
                 </div>
-                <div class="inputanregis">
-                    <div class="nameset">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                <form action="../controllers/registercontroller.php" method="POST">
+                    <div class="inputanregis">
+                        <div class="nameset">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="emailset">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="passwordset">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="confirmpass">
+                            <label for="confirm"> Confirm Password</label>
+                            <input type="password" id="confirm" name="confirm">
+                        </div>
+                        <div class="agreement">
+                            <input type="checkbox" id="kotak" name="kotak">
+                            <label for="kotak" id="ag">By clicking register, I agree to the terms and conditions</label>
+                        </div>
+                        <div class="regisbawah">
+                            <button class="regisbtn">Register</button>
+                        </div>
                     </div>
-                    <div class="emailset">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email">
-                    </div>
-                    <div class="passwordset">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="confirmpass">
-                        <label for="confirm"> Confirm Password</label>
-                        <input type="password" id="confirm" name="confirm">
-                    </div>
-                    <div class="agreement">
-                        <input type="checkbox" id="kotak" name="kotak">
-                        <label for="kotak" id="ag">By clicking register, I agree to the terms and conditions</label>
-                    </div>
-                    <div class="regisbawah">
-                        <button class="regisbtn" onclick="doRegister()">Register</button>
-                    </div>
-                </div>
+                </form>
+                
             </div> 
         </div>
     </div>

@@ -35,9 +35,9 @@ function doRegister(){
         type: 'POST',
         url: '../controller/register.php',
         data:{
-            Email: userEmail,
-            Name: userName,
-            Password: userPassword
+            email: userEmail,
+            name: userName,
+            password: userPassword
         },
         success: function(data) {
             if (data != null) {

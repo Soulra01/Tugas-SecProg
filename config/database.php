@@ -1,8 +1,8 @@
 <?php
     $config = [
-        'server' => '127.0.0.1',
+        'server' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'wearhousedb',
+        'database' => 'wearhouse',
     ];
 ?>
