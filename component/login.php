@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wear House - Login</title>
+    <link rel="stylesheet" href="../assets/global.css">
+    <link rel="stylesheet" href="../assets/login/login.css">
     <link rel="stylesheet" href="../assets/navbar.css">
-    <link rel="stylesheet" href="../assets/login/login.css">   
     <link rel="stylesheet" href="../assets/footer.css">
-    
-    <!-- <link rel="stylesheet" href="../assets/global.css"> -->
+    <script src="../script/jquery.js"></script>
+    <script src="../script/login.js"></script>
 </head>
 <body>
-<form action="controllers/AuthControllerlogin.php" method="POST">
     <!-- Navbar -->
     <nav class="navbar">
         <div class="kiri">
             <ul>
-                <a href="./home.html" id="logo">WearHouse</a>
+                <a href="./home.php" id="logo">WearHouse</a>
                 <div class="catabout">
-                    <li><a href="./category.html">Category</a></li>
-                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./category.php">Category</a></li>
+                    <li><a href="./aboutus.php">About Us</a></li>
                 </div>
             </ul>
         </div>
@@ -31,7 +33,7 @@
                 <button id="LogOut" onclick="doLogOut()">LogOut</button>
                 <div id="loginRegister">
                     <li><a href="./login.php">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./register.php">Register</a></li>
                 </div>
             </ul>  
         </div>
@@ -41,12 +43,11 @@
         <!-- Navbar Responsiv -->
         <div class="navrespon">
             <div class="ddatas">
-                <a href="./category.html">category</a>
-                <a href="./aboutUs.html">About Us</a>
-                <hr>
+                <a href="./category.php">category</a>
+                <a href="./aboutUs.php">About Us</a>
             </div>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
+            <a href="./login.php">Login</a>
+            <a href="./register.php">Register</a>
         </div>
     </nav>
 
@@ -59,24 +60,28 @@
                 <div class="loginTitle">
                     <P>Login</P>
                 </div>
-                <div class="inputanLogin">
-                    <div class="emailset">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email">
+                <form action="../controllers/authcontrolerlogin.php" method="POST">
+                    <div class="inputanLogin">
+                        
+                            <div class="emailset">
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="passwordset">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="rememberme">
+                                <input type="checkbox" id="kotak">
+                                <label for="kotak" id="rm">Remember Me</label>
+                            </div>
+                            <div class="loginbawah">
+                                <button class="loginbtn">Login</button>
+                                <a href="#" class="forgot">Forgot Your Password?</a>
+                            </div>
+                        
                     </div>
-                    <div class="passwordset">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="rememberme">
-                        <input type="checkbox" id="kotak">
-                        <label for="kotak" id="rm">Remember Me</label>
-                    </div>
-                    <div class="loginbawah">
-                        <button class="loginbtn" onclick="doLogin()">Login</button>
-                        <a href="#" class="forgot">Forgot Your Password?</a>
-                    </div>
-                </div>
+                </form>
            </div> 
         </div>
     </div>
@@ -90,13 +95,45 @@
                 <a href="#"><img src="../assets/category/img/bxl-instagram.svg"/></i></a>
             </div>
             <div class="text">
-                <p>Copyright @ 2021. All Rights Reserved</p>
+                <p>Copyright @ 2023 Secure Programming KEL . All Rights Reserved</p>
             </div>
         </div>
     </footer>
 </body>
 <script>
-    // $('.homecontainer').hide();
+
+    $('#popupadd').hide();
+
+    $('#popupedit').hide();
+
+    $('#popupdelete').hide();
+
+ 
+
+    function addpopup(){
+
+        $('#popupadd').show();
+
+    }
+
+    function xbtnadd(){
+
+        $('#popupadd').hide();
+
+    }
+
+    function xbtnedit(){
+
+        $('#popupedit').hide();
+
+    }
+
+    function xbtndelete(){
+
+        $('#popupdelete').hide();
+
+    }
+
 </script>
 <script src="../script/status.js"></script>
-</html>
+</php>

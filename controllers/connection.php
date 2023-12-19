@@ -1,7 +1,7 @@
 <?php
     require "../config/database.php";
     
-    $db = new mysqli(
+    $con = new mysqli(
         $config["server"],
         $config["username"],
         $config["password"],
