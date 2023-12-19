@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die();
     } else {
         
-        require('../controller/connection.php');
+        require('./connection.php');
 
         if ($con->connect_error) {
             http_response_code(500); 
             echo "database gagal terkoneksi: " . $con->connect_error;
         } else {
-            $checkEmailQuery = "SELECT * FROM msuser WHERE userEmail = ?";
+            $checkEmailQuery = "SELECT * FROM users WHERE email = ?";
             $checkEmailStmt = $con->prepare($checkEmailQuery);
             $checkEmailStmt->bind_param("s", $userEmail);
             $checkEmailStmt->execute();
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 http_response_code(400); 
                 echo "Email sudah ada";
             } else {
-                $checkUsernameQuery = "SELECT * FROM msuser WHERE userName = ?";
+                $checkUsernameQuery = "SELECT * FROM users WHERE email = ?";
                 $checkUsernameStmt = $con->prepare($checkUsernameQuery);
                 $checkUsernameStmt->bind_param("s", $userName);
                 $checkUsernameStmt->execute();
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 } else {
 
                     // Persiapkan query untuk insert data ke tabel 'users' termasuk password
-                    $insertUserQuery = "INSERT INTO msuser (userID, userName, userEmail, userPassword) VALUES (null, ?, ?, ?)";
+                    $insertUserQuery = "INSERT INTO users (id, username, email, password) VALUES (null, ?, ?, ?)";
                     $insertUserStmt = $con->prepare($insertUserQuery);
                     $insertUserStmt->bind_param("sss", $userName, $userEmail, $userPassword);
 

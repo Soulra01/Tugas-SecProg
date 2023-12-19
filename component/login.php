@@ -100,7 +100,6 @@
         </div>
     </footer>
 </body>
-<<<<<<< HEAD
 <script>
 
     $('#popupadd').hide();
@@ -137,7 +136,4 @@
 
 </script>
 <script src="../script/status.js"></script>
-=======
-
->>>>>>> 11f5db6c9dfd08deddc1217e95cdbcbcdb50e276
 </html>
