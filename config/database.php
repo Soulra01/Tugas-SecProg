@@ -3,6 +3,6 @@
         'server' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'wearhouse',
+        'database' => 'secprogasg',
     ];
 ?>

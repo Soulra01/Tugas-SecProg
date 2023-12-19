@@ -1,7 +1,7 @@
 
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
     <nav class="navbar">
         <div class="kiri">
             <ul>
-                <a href="./home.html" id="logo">WearHouse</a>
+                <a href="./home.php" id="logo">WearHouse</a>
                 <div class="catabout">
                     <li><a href="./category.php">Category</a></li>
                     <li><a href="./aboutus.php">About Us</a></li>
@@ -32,8 +32,8 @@
                 <li><label for="tri" id="segitiga">▼</label></li>
                 <button id="LogOut" onclick="doLogOut()">LogOut</button>
                 <div id="loginRegister">
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./login.php">Login</a></li>
+                    <li><a href="./register.php">Register</a></li>
                 </div>
             </ul>  
         </div>
@@ -43,8 +43,8 @@
         <!-- Navbar Responsiv -->
         <div class="navrespon">
             <div class="ddatas">
-                <a href="./category.html">category</a>
-                <a href="./aboutUs.html">About Us</a>
+                <a href="./category.php">category</a>
+                <a href="./aboutUs.php">About Us</a>
             </div>
             <a href="./login.php">Login</a>
             <a href="./register.php">Register</a>
@@ -100,5 +100,40 @@
         </div>
     </footer>
 </body>
+<script>
 
-</html>
+    $('#popupadd').hide();
+
+    $('#popupedit').hide();
+
+    $('#popupdelete').hide();
+
+ 
+
+    function addpopup(){
+
+        $('#popupadd').show();
+
+    }
+
+    function xbtnadd(){
+
+        $('#popupadd').hide();
+
+    }
+
+    function xbtnedit(){
+
+        $('#popupedit').hide();
+
+    }
+
+    function xbtndelete(){
+
+        $('#popupdelete').hide();
+
+    }
+
+</script>
+<script src="../script/status.js"></script>
+</php>
